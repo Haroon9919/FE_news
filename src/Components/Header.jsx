@@ -1,6 +1,6 @@
-import Navbar from "./Navbar";
+import {Navbar} from "./Navbar";
 
-export const Header = () => {
+const Header = () => {
   return (
     <>
 <h1>Haroons News</h1>
@@ -8,3 +8,5 @@ export const Header = () => {
     </>
   );
 };
+
+export default Header
