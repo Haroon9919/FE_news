@@ -13,7 +13,7 @@ export const getAllArticles = () => {
 
 
 export const getArticlebyID = (article_id) => {
-    return newsApi.get(`articles/${article_id}`).then((response) => {
+    return newsApi.get(`/articles/${article_id}`).then((response) => {
       return response.data.articles; 
     });
   };

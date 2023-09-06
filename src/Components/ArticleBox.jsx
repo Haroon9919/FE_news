@@ -1,5 +1,6 @@
-import { ArticleCard } from "./ArticleCard";
+import  ArticleCard  from "./ArticleCard";
 import { useEffect, useState } from "react";
+import axios from "axios";
 import { getAllArticles } from "../api calls/api";
 
 const ArticleBox = () => {
@@ -9,7 +10,7 @@ const ArticleBox = () => {
 
 useEffect(() => {
 setLoading(true);
-getAllArticles()
+axios.get(getAllArticles)
 .then((response)=> response.json())
 .then((body) => {
     setArticles(body.articles)
